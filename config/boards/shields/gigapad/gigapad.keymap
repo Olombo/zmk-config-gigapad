@@ -19,7 +19,7 @@
 
         default_layer {
             bindings = <
-                &A
+                &macro_A
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
