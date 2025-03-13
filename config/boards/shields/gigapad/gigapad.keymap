@@ -47,7 +47,7 @@
 
         default_layer {
             bindings = <
-                &kp A  &kp B  &kp C  &kp D  &kp E  &kp F  &kp G  &kp H  &kp I
+                &macro_tap &kp A  &kp B  &kp C  &kp D  &kp E  &kp F  &kp G  &kp H  &kp I
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
