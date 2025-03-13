@@ -83,7 +83,7 @@
 
         default_layer {
             bindings = <
-                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E  &macro_F  &macro_G  &macro_AH  &macro_I
+                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E  &macro_F  &macro_G  &macro_H  &macro_I
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
