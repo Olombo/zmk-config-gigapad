@@ -24,6 +24,7 @@
     };
 
     sensors {
+        compatible = "alps,ec11";
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>;
     };
