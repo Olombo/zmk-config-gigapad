@@ -77,7 +77,7 @@
             bindings = <
                 &macro_A  &macro_B  &macro_C  &macro_D  &macro_E  &macro_F  &macro_G  &macro_H
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
