@@ -45,37 +45,13 @@
             bindings = 
                 <&macro_tap &kp ENTER>;
         };
-        macro_F: macro_F {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_tap &kp F5>;
-        };
-        macro_G: macro_G {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_tap &kp F6>;
-        };
-        macro_H: macro_H {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = 
-                <&macro_tap &kp F7>;
-        };
     };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E  &macro_F  &macro_G  &macro_H
+                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
