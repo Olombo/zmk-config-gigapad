@@ -4,12 +4,20 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define NAVI    1
+#define SCRUB   1
 
 #define NONE 0
 
 / {
     macros {
+        macro_A: macro_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = 
+                <&macro_tap &kp &tog SCRUB>;
+        };
         macro_B: macro_B {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -48,14 +56,14 @@
 
         default_layer {
             bindings = <
-                &tog NAVI  &macro_B  &macro_C  &macro_D  &macro_E
+                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         }
 
-        nav_layer {
+        scrub_layer {
             bindings = <
-                &tog NAVI  &macro_B  &macro_C  &macro_D  &macro_E
+                &macro_A  &macro_B  &macro_C  &macro_D  &macro_E
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
