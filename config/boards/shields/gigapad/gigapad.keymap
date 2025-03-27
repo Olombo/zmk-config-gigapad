@@ -6,8 +6,6 @@
 #define DEFAULT 0
 #define NAVI    1
 
-#define NONE 0
-
 / {
     macros {
         macro_B: macro_B {
@@ -46,14 +44,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        DEFAULT_layer {
             bindings = <
                 &tog NAVI  &macro_B  &macro_C  &macro_D  &macro_E
             >;
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         }
 
-        navi_layer {
+        NAVI_layer {
             bindings = <
                 &tog NAVI  &macro_B  &macro_C  &macro_D  &macro_E
             >;
