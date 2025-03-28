@@ -46,7 +46,7 @@
 &mo 1   &macro_A   &macro_B   &macro_C  &macro_D
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
 
         layer_1 {
@@ -54,7 +54,7 @@
 &trans  &macro_A   &macro_B   &macro_C  &macro_D
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
     };
 };
