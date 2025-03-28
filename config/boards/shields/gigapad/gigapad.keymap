@@ -3,12 +3,47 @@
 
 
 / {
+    macros {
+        macro_A: macro_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = 
+                <&macro_tap &kp A>;
+        };
+        macro_B: macro_B {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = 
+                <&macro_tap &kp S>;
+        };
+        macro_C: macro_C {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = 
+                <&macro_tap &kp ESC>;
+        };
+        macro_D: macro_D {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = 
+                <&macro_tap &kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&mo 1   &kp S   &kp A   &kp ESC  &kp ENTER
+&mo 1   &macro_A   &macro_B   &macro_C  &macro_D
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -16,7 +51,7 @@
 
         layer_1 {
             bindings = <
-&trans  &kp S   &kp A   &kp ESC  &kp ENTER
+&trans  &macro_A   &macro_B   &macro_C  &macro_D
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
